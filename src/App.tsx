@@ -40,7 +40,7 @@ interface ProjectItem {
 const EXPERIENCE: ExperienceItem[] = [
   {
     company: "長庚大學人工智慧研究中心",
-    role: "國科會M4計畫秘書",
+    role: "國科會M4計畫研究助理",
     period: "2026.03 - Present",
     description: "負責國科會跨部會計畫整合與行政對接，校內外經費申請與人事聘任。"
   }
@@ -107,7 +107,7 @@ export default function App() {
                 <div className="space-y-4">
                   <h1 className="text-5xl md:text-7xl font-display font-extrabold tracking-tight text-slate-900">蘇家晴</h1>
                   <div className="text-xl md:text-2xl text-indigo-600 font-bold font-serif italic">
-                    國科會M4計畫秘書 · 長庚大學人工智慧研究中心
+                    國科會M4計畫研究助理 · 長庚大學人工智慧研究中心
                   </div>
                   <div className="flex flex-wrap gap-6 text-xs font-black tracking-widest text-slate-400">
                     <a href="mailto:bettysu@cgu.edu.tw" className="flex items-center gap-2 hover:text-indigo-600 transition-colors lowercase">
