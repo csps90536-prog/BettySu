@@ -98,7 +98,7 @@ export default function App() {
                 <div className="w-44 h-44 md:w-56 md:h-56 rounded-[2.5rem] overflow-hidden shadow-2xl border-2 border-slate-50 shrink-0">
                   {/* 👇 標註：請在此處更換您的大頭照 URL (Replace your profile picture URL here) */}
                   <img 
-                    src="/assets/蘇家晴.jpg" 
+                    src="/assets/蘇家晴.webp" 
                     alt="Betty Su" 
                     className="w-full h-full object-cover"
                   />
