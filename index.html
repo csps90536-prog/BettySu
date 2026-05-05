@@ -1,13 +1,168 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>蘇家晴 | Betty Su - 個人履歷</title>
+    <!-- 引入自訂樣式（包含 Tailwind） -->
+    <link rel="stylesheet" href="/src/index.css">
+    <!-- 引入 Lucide 圖標庫 -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      /* 額外的動畫與細部調整 */
+      .font-display { font-family: 'Outfit', sans-serif; }
+      .font-serif { font-family: 'Source Serif 4', serif; }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="min-h-screen bg-violet-50/50 text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-900 overflow-x-hidden transition-all duration-700">
+    
+    <div class="max-w-4xl mx-auto px-6 py-12 md:py-24">
+      <main class="space-y-24">
+        
+        <!-- Header & Introduction -->
+        <section id="about" class="space-y-12">
+          <div class="space-y-8">
+            <div class="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+              <div class="w-44 h-44 md:w-56 md:h-56 rounded-[2.5rem] overflow-hidden shadow-2xl border-2 border-slate-50 shrink-0">
+                <img 
+                  src="/assets/蘇家晴.webp" 
+                  alt="Betty Su" 
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <div class="space-y-4">
+                <h1 class="text-5xl md:text-7xl font-display font-extrabold tracking-tight text-slate-900">蘇家晴</h1>
+                <div class="text-xl md:text-2xl text-indigo-600 font-bold font-serif italic">
+                  國科會M4計畫秘書 · 長庚大學人工智慧研究中心
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs font-black tracking-widest text-slate-400">
+                  <a href="mailto:bettysu@cgu.edu.tw" class="flex items-center gap-2 hover:text-indigo-600 transition-colors lowercase">
+                    <i data-lucide="mail"></i> bettysu@cgu.edu.tw
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-px bg-slate-100 w-full"></div>
+            
+            <div class="space-y-6 text-lg text-slate-500 leading-relaxed max-w-3xl font-medium">
+              <p>
+                目前服務於長庚大學人工智慧研究中心，主要負責項目為國科會 M4 計畫。本計畫以「超越 Scaling Law，以資料效率與可信賴性為核心」為研究主軸，致力於建立一套適用於醫療影像的模組化視覺基礎模型（M4, Modular Medical Foundation Models），回應真實醫療場域中資料稀缺、標註成本高與隱私限制等關鍵挑戰。
+              </p>
+              <p>
+                Currently working at the Artificial Intelligence Research Center of Chang Gung University, primarily responsible for the National Science Council's M4 Project. This project, with the research focus of "Beyond Scaling Law, with Data Efficiency and Reliability as the Core," aims to establish a set of modular medical foundation models (M4) applicable to medical imaging, addressing key challenges in real-world medical settings such as data scarcity, high annotation costs, and privacy restrictions. 
+              </p>
+              <div class="flex items-center gap-3 text-slate-400 text-sm italic">
+                <i data-lucide="briefcase"></i> 桃園市龜山區文化一路259號
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="space-y-12">
+          <div class="flex items-center gap-4">
+            <h2 class="text-sm font-display font-black uppercase tracking-[0.3em] text-indigo-600/50">Experience</h2>
+            <div class="h-px flex-1 bg-slate-100"></div>
+          </div>
+          <div class="space-y-12">
+            <div class="group flex flex-col md:flex-row gap-2 md:gap-12">
+              <div class="text-xs font-black text-slate-300 w-32 shrink-0 pt-1.5 uppercase tracking-widest">
+                2026.03 - Present
+              </div>
+              <div class="space-y-3">
+                <h3 class="text-xl font-serif font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">國科會M4計畫秘書</h3>
+                <div class="flex items-center gap-2 text-slate-500 font-bold text-xs uppercase tracking-widest">
+                  <i data-lucide="briefcase"></i> 長庚大學人工智慧研究中心
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-xl font-medium">
+                  負責國科會跨部會計畫整合與行政對接，校內外經費申請與人事聘任。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="space-y-12">
+          <div class="flex items-center gap-4">
+            <h2 class="text-sm font-display font-black uppercase tracking-[0.3em] text-indigo-600/50">Education</h2>
+            <div class="h-px flex-1 bg-slate-100"></div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="p-10 bg-white border border-slate-100 rounded-3xl shadow-sm space-y-4 hover:shadow-md transition-all duration-300">
+              <div class="text-[10px] font-black text-indigo-600 uppercase tracking-[0.2em]">2021 - 2025</div>
+              <h3 class="text-xl font-serif font-bold text-slate-900 leading-tight">National Taipei University</h3>
+              <p class="text-slate-500 text-sm font-bold uppercase tracking-wider">M.S. in Chinese</p>
+            </div>
+            <div class="p-10 bg-white border border-slate-100 rounded-3xl shadow-sm space-y-4 hover:shadow-md transition-all duration-300">
+              <div class="text-[10px] font-black text-indigo-600 uppercase tracking-[0.2em]">2018 - 2021</div>
+              <h3 class="text-xl font-serif font-bold text-slate-900 leading-tight">Chung Yuan Christian University</h3>
+              <p class="text-slate-500 text-sm font-bold uppercase tracking-wider">B.S. in Teaching Chinese as a Second Language</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="space-y-12">
+          <div class="flex items-center gap-4">
+            <h2 class="text-sm font-display font-black uppercase tracking-[0.3em] text-indigo-600/50">Selected Projects</h2>
+            <div class="h-px flex-1 bg-slate-100"></div>
+          </div>
+          <div class="grid gap-16">
+            <div class="group space-y-8">
+              <div class="space-y-6">
+                <h3 class="text-3xl md:text-5xl font-serif font-bold text-slate-900 group-hover:text-indigo-600 transition-colors tracking-tight leading-[1.2]">
+                  大稻埕飲食文學之華語教學課程設計研究
+                </h3>
+
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-[10px] font-black uppercase tracking-widest text-indigo-600 bg-indigo-50/50 border border-indigo-100/50 px-3 py-1.5 rounded-xl">大稻埕</span>
+                  <span class="text-[10px] font-black uppercase tracking-widest text-indigo-600 bg-indigo-50/50 border border-indigo-100/50 px-3 py-1.5 rounded-xl">飲食文學</span>
+                  <span class="text-[10px] font-black uppercase tracking-widest text-indigo-600 bg-indigo-50/50 border border-indigo-100/50 px-3 py-1.5 rounded-xl">華語文能力基準第五級</span>
+                  <span class="text-[10px] font-black uppercase tracking-widest text-indigo-600 bg-indigo-50/50 border border-indigo-100/50 px-3 py-1.5 rounded-xl">課程暨教學設計</span>
+                  <span class="text-[10px] font-black uppercase tracking-widest text-indigo-600 bg-indigo-50/50 border border-indigo-100/50 px-3 py-1.5 rounded-xl">ADDIE模式</span>
+                  <span class="text-[10px] font-black uppercase tracking-widest text-indigo-600 bg-indigo-50/50 border border-indigo-100/50 px-3 py-1.5 rounded-xl">任務導向教學法</span>
+                  <span class="text-[10px] font-black uppercase tracking-widest text-indigo-600 bg-indigo-50/50 border border-indigo-100/50 px-3 py-1.5 rounded-xl">體演文化教學法</span>
+                </div>
+
+                <div class="space-y-6">
+                  <p class="text-lg text-slate-500 leading-relaxed font-medium max-w-4xl">
+                    本研究以大稻埕飲食文學為核心，旨在設計一套符合臺灣華語文能力基準（TBCL）第五級學習者之課程暨教學方案，探討其在語言學習與文化理解上的可行性與成效。
+                  </p>
+                  <div>
+                    <a 
+                      href="https://hdl.handle.net/11296/6nvd5f" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="inline-flex items-center gap-3 text-xs font-black text-slate-900 hover:text-indigo-600 transition-colors uppercase tracking-[0.2em] border-b-2 border-slate-100 pb-2 hover:border-indigo-600"
+                    >
+                      論文連結 / Publication Link <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-24 pb-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-bold uppercase tracking-[0.2em] text-slate-300">
+          <div id="copyright-year">&copy; 2026 Betty Jia-Ching Su.</div>
+          <div class="flex gap-8">
+            <a href="#" class="hover:text-indigo-600 transition-colors">Privacy</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Terms</a>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- 初始化圖標 -->
+    <script>
+      lucide.createIcons();
+      // 動態更新年份
+      document.getElementById('copyright-year').innerHTML = '&copy; ' + new Date().getFullYear() + ' Betty Jia-Ching Su.';
+    </script>
   </body>
 </html>
-
